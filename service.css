@@ -1,0 +1,616 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+
+
+*{
+    box-sizing:border-box;
+}
+body, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*  Begain Custom Style  */
+.main-header .container-fluid,
+.slider-section .container-fluid {
+    max-width: 1480px;
+}
+
+body .btn-primary {
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 10px 40px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+    body .btn-primary:hover {
+        border-color: #111;
+    }
+
+    body .btn-primary::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #111;
+        border-color: #111;
+        z-index: -1;
+        transition: .3s;
+    }
+
+    body .btn-primary:hover::after {
+        width: 100%;
+    }
+
+/* Menu */
+ul.our-primary-menu {
+}
+
+    ul.our-primary-menu li {
+    }
+
+ul.our-primary-menu li a {
+     text-decoration: none;
+     display: inline-block;
+     padding: 10px 20px;
+     border: 1px solid white;
+     color: #111;
+     font-weight: 500;
+     border-radius: 5px;
+}
+
+ul.our-primary-menu li a:hover {
+      background-color: red;
+      color: white;
+}
+
+
+.header-info {
+}
+.search {
+    height: 100%;
+    width: 30px;
+}
+
+.on {
+    color: red;
+    border: none;
+    background-color: #fafafa;
+    border-radius: 50%;
+}
+
+.off {
+    color: red;
+    border: none;
+    background-color: #fafafa;
+    display: none;
+    border-radius: 50%;
+}
+
+.header-call {
+    width: 220px;
+}
+
+.header-call-icon {
+    font-size: 33px;
+    color: #e73a3e;
+    padding-left: 20px;
+}
+
+.header-call-info span {
+    color: #606060;
+}
+
+.header-call-info a {
+    font-weight: 500;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1480px) {
+    .header-info {
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+        right: 31%;
+    }
+
+    .header-button {
+        flex-direction: column;
+        position: relative;
+        top: 8%;
+        left: 8%;
+    }
+
+    .log1 {
+        position: relative;
+        top: 130%;
+        right: 50%;
+        width: 130px;
+    }
+}
+
+/*  service-title  */
+
+.service-title {
+    height: 130px;
+    max-width: 1480px;
+    background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    height: 60px;
+    width: 280px;
+    position: relative;
+    left: 800px;
+    border-radius: 10px;
+    display: none;
+    background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
+}
+
+.type {
+    height: 40px;
+    width: 235px;
+    position: relative;
+    top: 18px;
+    left: 5px;
+    border-radius: 10px;
+}
+
+.sub {
+    height: 30px;
+    width: 30px;
+    background-color: #fafafa;
+    color: red;
+    position: relative;
+    top: 18px;
+    border-radius: 50%;
+}
+.team-title {
+    height: 70px;
+    display: block;
+    color:white;
+    background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
+}
+    .team-title h1 {
+        position: relative;
+        top: 20%;
+    }
+.team-title span{
+
+}
+
+
+@media only screen and (max-width: 1480px) {
+    .ul.our-primary-menu {
+        position: relative;
+        left: 20px;
+    }
+
+    .search {
+        position: relative;
+        right: 80px;
+        height: 20px;
+    }
+
+    .header-call {
+        position: relative;
+        right: 10px;
+        
+    }
+
+    .header-button {
+        position: relative;
+        bottom: 135px;
+       
+    }
+
+    .search-box {
+        transform: translateX(-480px);
+    }
+}
+
+
+/* Content Box */
+
+.content{
+    height:1250px;
+    max-width:1480px;
+}
+.content-title {
+    height: 150px;
+    max-width: 1480px;
+    background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
+    font-size: 15pt;
+    color: white;
+}
+    .content-title p {
+        margin: 0px 15px 0px 20px ;
+    }
+.content-title span{
+    font-size:35pt;
+}
+.main-content {
+    height: 1100px;
+    max-width: 1480px;
+    background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
+}
+.main-content1{
+    height:450px;
+    max-width:1480px;
+    display:flex;
+    position:relative;
+    top:20px;
+    justify-content:center;
+}
+.main-content2 {
+    height: 450px;
+    max-width: 1480px;
+    display: flex;
+    position: relative;
+    top: 40px;
+    justify-content: center;
+}
+
+/*  website-design  */
+
+.website-design {
+    height: 100%;
+    width: 30%;
+    background-color: rebeccapurple;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+    .website-design i {
+        color: red;
+        position: relative;
+        top: 25px;
+    }
+
+    .website-design h2 {
+        position: relative;
+        top: 35px;
+    }
+
+    .website-design p {
+        position: relative;
+        top: 90px;
+        padding: 0px 45px;
+    }
+
+    .website-design a {
+        text-decoration: none;
+        position: relative;
+        top: 140px;
+        font-size: 20pt;
+        color: whitesmoke;
+        background-color: black;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    .website-design:hover {
+        background-color: red;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+        .website-design:hover i {
+            color: whitesmoke;
+        }
+
+        .website-design:hover h2 {
+            color: whitesmoke;
+        }
+
+        .website-design:hover p {
+            color: whitesmoke;
+        }
+
+        .website-design:hover a {
+            background-color: darkred;
+        }
+
+
+/*  website-maintainence  */
+
+.website-maintainence {
+    height: 100%;
+    width: 30%;
+    background-color: rebeccapurple;
+    margin: 0px 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+    .website-maintainence i {
+        color: red;
+        position: relative;
+        top: 25px;
+    }
+
+    .website-maintainence h2 {
+        position: relative;
+        top: 35px;
+    }
+
+    .website-maintainence p {
+        position: relative;
+        top: 90px;
+        padding: 0px 45px;
+    }
+
+    .website-maintainence a {
+        text-decoration: none;
+        position: relative;
+        top: 140px;
+        font-size: 20pt;
+        color: whitesmoke;
+        background-color: black;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    .website-maintainence:hover {
+        background-color: red;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+     .website-maintainence:hover i {
+        color: whitesmoke;
+      }
+
+        .website-maintainence:hover h2 {
+            color: whitesmoke;
+        }
+
+        .website-maintainence:hover p {
+            color: whitesmoke;
+        }
+
+        .website-maintainence:hover a {
+            background-color: darkred;
+        }
+
+
+/*  Software development  */
+
+.software-developer {
+    height: 100%;
+    width: 30%;
+    background-color: rebeccapurple;
+    margin-left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+    .software-developer i {
+        color: red;
+        position: relative;
+        top: 25px;
+    }
+
+    .software-developer h2 {
+        position: relative;
+        top: 35px;
+    }
+
+    .software-developer p {
+        position: relative;
+        top: 90px;
+        padding: 0px 45px;
+    }
+
+    .software-developer a {
+        text-decoration: none;
+        position: relative;
+        top: 140px;
+        font-size: 20pt;
+        color: whitesmoke;
+        background-color: black;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    .software-developer:hover {
+        background-color: red;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+        .software-developer:hover i {
+            color: whitesmoke;
+        }
+
+        .software-developer:hover h2 {
+            color: whitesmoke;
+        }
+
+        .software-developer:hover p {
+            color: whitesmoke;
+        }
+
+        .software-developer:hover a {
+            background-color: darkred;
+        }
+
+
+/*  Game development  */
+
+
+.game-developer {
+    height: 100%;
+    width: 30%;
+    background-color: rebeccapurple;
+    margin-right: 10px;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+.game-developer i {
+    color: red;
+    position: relative;
+    top: 25px;
+}
+
+.game-developer h2 {
+    position: relative;
+    top: 35px;
+}
+
+.game-developer p {
+    position: relative;
+    top: 90px;
+    padding: 0px 45px;
+}
+
+.game-developer a {
+    text-decoration: none;
+    position: relative;
+    top: 140px;
+    font-size: 20pt;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+
+.game-developer:hover {
+    background-color: red;
+    transform: scale(1);
+    opacity: 1;
+}
+
+    .game-developer:hover i {
+        color: whitesmoke;
+    }
+
+    .game-developer:hover h2 {
+        color: whitesmoke;
+    }
+
+    .game-developer:hover p {
+        color: whitesmoke;
+    }
+
+    .game-developer:hover a {
+        background-color: darkred;
+    }
+
+
+/* Data Analysis */
+
+.data-analysis {
+    height: 100%;
+    width: 30%;
+    background-color: rebeccapurple;
+    margin-left: 10px;
+    border-radius:10px;
+    text-align: center;
+    opacity: 0.8;
+    transform: scale(0.98);
+    transition: 1s;
+}
+
+.data-analysis i {
+    color: red;
+    position: relative;
+    top: 25px;
+}
+
+    .data-analysis h2 {
+        position: relative;
+        top: 35px;
+    }
+
+    .data-analysis p {
+        position: relative;
+        top: 90px;
+        padding: 0px 45px;
+    }
+
+    .data-analysis a {
+        text-decoration: none;
+        position: relative;
+        top: 140px;
+        font-size: 20pt;
+        color: whitesmoke;
+        background-color: black;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+
+    .data-analysis:hover {
+        background-color: red;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+        .data-analysis:hover i {
+            color: whitesmoke;
+        }
+
+        .data-analysis:hover h2 {
+            color: whitesmoke;
+        }
+
+        .data-analysis:hover p {
+            color: whitesmoke;
+        }
+
+        .data-analysis:hover a {
+            background-color: darkred;
+        }
+
+
+
+/* Finish */
+
+.finish {
+    height: 70px;
+    max-width: 1480px;
+    background-color: black;
+}
+
+    .finish h6 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
+    }
+
+    .finish span {
+        color: crimson;
+    }

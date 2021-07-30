@@ -1,0 +1,247 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
+
+body, span {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*  Begain Custom Style  */
+.main-header .container-fluid,
+.slider-section .container-fluid {
+    max-width: 1480px;
+}
+
+body .btn-primary {
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 10px 40px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+    body .btn-primary:hover {
+        border-color: #111;
+    }
+
+    body .btn-primary::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #111;
+        border-color: #111;
+        z-index: -1;
+        transition: .3s;
+    }
+
+    body .btn-primary:hover::after {
+        width: 100%;
+    }
+
+/* Menu */
+ul.our-primary-menu {
+    position: relative;
+    right: 20px;
+}
+
+    ul.our-primary-menu li {
+    }
+
+        ul.our-primary-menu li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid white;
+            color: #111;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+
+            ul.our-primary-menu li a:hover {
+                background-color: red;
+                color: white;
+            }
+
+.header-info {
+}
+
+.search {
+    height: 100%;
+    width: 30px;
+}
+
+.on {
+    color: red;
+    border: none;
+    background-color: #fafafa;
+    border-radius: 50%;
+}
+
+.off {
+    color: red;
+    border: none;
+    background-color: #fafafa;
+    display: none;
+    border-radius: 50%;
+}
+
+.header-call {
+    width: 220px;
+}
+
+.header-call-icon {
+    font-size: 33px;
+    color: #e73a3e;
+    padding-left: 20px;
+}
+
+.header-call-info span {
+    color: #606060;
+}
+
+.header-call-info a {
+    font-weight: 500;
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1480px) {
+    .header-info {
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+        right: 31%;
+    }
+
+    .header-button {
+        flex-direction: column;
+        position: relative;
+        top: 8%;
+        left: 8%;
+    }
+
+    .log1 {
+        position: relative;
+        top: 130%;
+        right: 50%;
+        width: 130px;
+    }
+}
+/*  team-page  */
+.team-page {
+    max-width: 1480px;
+    height: 1000px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.search-box {
+    display: flex;
+    height: 60px;
+    width: 280px;
+    width: 280px;
+    position: relative;
+    left: 800px;
+    border-radius: 10px;
+    display: none;
+    background-color: black;
+}
+
+.type {
+    height: 40px;
+    width: 235px;
+    position: relative;
+    top: 18px;
+    left: 5px;
+    border-radius: 10px;
+}
+
+.sub {
+    height: 30px;
+    width: 30px;
+    background-color: #fafafa;
+    color: red;
+    position: relative;
+    top: 18px;
+    border-radius: 50%;
+}
+
+.text1 {
+    height: 100%;
+    width: 60%;
+    text-align: center;
+}
+
+.team-title {
+    max-width: 1480px;
+    height: 150px;
+    color: whitesmoke;
+    background-color: black;
+}
+
+    .team-title h2 {
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+@media only screen and (max-width: 1480px) {
+    .ul.our-primary-menu {
+        position: relative;
+        left: 20px;
+    }
+
+    .search {
+        position: relative;
+        right: 80px;
+        height: 40px;
+    }
+
+    .header-call {
+        position: relative;
+        right: 10px;
+    }
+
+    .header-button {
+        position: relative;
+        bottom: 135px;
+    }
+
+    .search-box {
+        transform: translateX(-380px);
+    }
+}
+
+.about-us{
+    height:500px;
+    max-width:1480px;
+    background-color:#fafafa;
+}
+
+
+/* Finish */
+
+.finish {
+    height: 70px;
+    max-width: 1480px;
+    background-color: black;
+}
+
+    .finish h6 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
+    }
+
+    .finish span {
+        color: crimson;
+    }
