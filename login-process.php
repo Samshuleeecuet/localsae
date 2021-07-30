@@ -30,6 +30,8 @@ if(empty($error)){
     if (!empty($row)){
         // verify password
         if(password_verify($password, $row['password'])){
+            session_start();
+            $_SESSION["id"] = $row["userID"];
             header("location: index.php");
             exit();
         }

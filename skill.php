@@ -30,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ml-auto our-primary-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="team.html">Team</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="team.php">Team</a></li>
                     <li>
-                        <a href="service.html">Services</a>
+                        <a href="service.php">Services</a>
                     </li>
                     <li>
                         <a href="#">Skill</a>
@@ -58,8 +58,23 @@
                         </div>
                     </div>
                     <div class="header-button">
-                        <a href="signup.html" class="btn btn-primary">Sign Up</a>
-                        <a href="login.html" class="btn btn-primary log1">Log In</a>
+                    <?php 
+                        session_start();
+
+                            if(isset($_SESSION['id'])){
+                                ?>
+                                <a href="profile.php" class="btn btn-primary">profile</a>
+                                <a href="signout.php" class="btn btn-primary log1">Sign Out</a>
+                                <?php
+                                
+                            }else
+                            {
+                                ?>
+                                <a href="register.php" class="btn btn-primary">Sign Up</a>
+                                <a href="login.php" class="btn btn-primary log1">Log In</a>
+                                <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>

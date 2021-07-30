@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -10,15 +10,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="signup.js" />
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="service.js" />
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
 
-    <title>Sign Up</title>
+    <title>SERVICE</title>
 </head>
 <body>
 
@@ -36,15 +36,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ml-auto our-primary-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="team.html">Team</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="team.php">Team</a></li>
                     <li>
-                        <a href="service.html">Services</a>
+                        <a href="service.php">Services</a>
                     </li>
                     <li>
-                        <a href="skill.html">Skill</a>
+                        <a href="skill.php">Skill</a>
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.php">About</a></li>
                     <li><a href="#">Education</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -64,8 +64,23 @@
                         </div>
                     </div>
                     <div class="header-button">
-                        <a href="signup.html" class="btn btn-primary">Sign Up</a>
-                        <a href="login.html" class="btn btn-primary log1">Log In</a>
+                    <?php 
+                        session_start();
+
+                            if(isset($_SESSION['id'])){
+                                ?>
+                                <a href="profile.php" class="btn btn-primary">profile</a>
+                                <a href="signout.php" class="btn btn-primary log1">Sign Out</a>
+                                <?php
+                                
+                            }else
+                            {
+                                ?>
+                                <a href="register.php" class="btn btn-primary">Sign Up</a>
+                                <a href="login.php" class="btn btn-primary log1">Log In</a>
+                                <?php
+                            }
+                        ?>
                     </div>
                 </div>
 
@@ -73,7 +88,7 @@
 
         </div>
     </nav>
-    <div class="signin-title">
+    <div class="service-title">
         <div class="search-box">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search" class="type">
@@ -81,39 +96,63 @@
             </form>
         </div>
         <div class="team-title">
-            <h1> Sign Up </h1>
-        </div>
-    </div>
-    <div class="form">
-       <div class="form-body">
-        <b class="form-tit">Sign Up</b>
-        <p>Please fill up this form to sign-up</p><br>
-        <hr>
-            <form action="register-process.php" class="info-form" method="POST">
-                <label for="fname"><b>First-name </b></label><br><input type="text" id="fname" name="fname" required><br><br>
-                <label for="lname"><b>Last-name</b></label><br><input type="text" id="lname" name="lname" required><br><br>
-                <label for="nname"><b>Nick-name </b></label><br><input type="text" id="nname" name="nname" required><br><br>
-                <label for="phn"><b>Phone-number </b></label><br><input type="text" id="phn" name="phn" required><br><br>
-                <label for="email"><b>Email </b></label><br><input type="text" id="email" name="email" required><br><br>
-                <label for="pass"><b>Password </b></label><br><input type="password" id="pass" name="pass" class="form-control passwordInput" required><br><br>
-                <span id="StrengthDisp" class="badge displayBadge">Weak</span><br>
-                <label for="copass"><b>Confirm-password</b></label><br><input type="password" id="copass" name="copass" required><br><br>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-                <button>Sign-up</button> 
-      
-             </form>
+            <h1> Our <span>Service </span></h1>
         </div>
     </div>
 
+
+    <div class="content">
+        <div class="content-title">
+            <p>
+                <span>W</span>elcome to SAE Developer Website Service Page. In this page, you can order to create your preferrable website with responsive.
+                We also do website maintenance, game development, app development, data analysis. If anyone is required , you can order now. We always try to handle
+                your order within due time which based on the type of work.
+            </p>
+        </div>
+        <div class="main-content">
+            <div class="main-content1">
+                <div class="website-design">
+                    <i class="fas fa-paint-brush fa-4x"></i>
+                    <h2>Website-design</h2>
+                    <p> For order for buy a website with responsive,<br /> Click Order Now button</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="website-maintainence">
+                    <i class="fas fa-tools fa-4x"></i>
+                    <h2>Website-maintainence</h2>
+                    <p> For maintainence a website with responsive,<br /> Click Order Now button</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="software-developer">
+                    <i class="fas fa-laptop-code fa-4x"></i>
+                    <h2>Softwate-development</h2>
+                    <p> For order any software for buy new or development,<br /> Click Order Now button</p>
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+            <div class="main-content2">
+                <div class="game-developer">
+                    <i class="fas fa-dice-d6 fa-4x"></i>
+                    <h2>Game Development</h2>
+                    <p> For order any game for development,<br /> Click Order Now button</p>
+                    <a href="#">Order Now</a>
+                </div>
+                <div class="data-analysis">
+                    <i class="fas fa-database fa-4x"></i>
+                    <h2>Data-analysis</h2>
+                    <p> For order to analysis a databse,<br /> Click Order Now button</p>
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="finish">
         <h6> Created By <span>Samshul Islam</span> | © 2021 All rights reserved.</h6>
     </div>
 
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="signup.js"></script>
+    <script src="service.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
