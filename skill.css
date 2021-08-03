@@ -138,28 +138,31 @@ body .btn-primary {
 /*  skill-title  */
 
 .skill-title {
-    max-height: 120px;
-    max-width: 1480px;
-    background-color: greenyellow;
-    text-align: center;
+    height: 80px;
+    width: 1480px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
 }
 
 .search-box {
     display: flex;
     height: 60px;
     width: 280px;
-    position: relative;
-    left: 800px;
+    position: absolute;
+    left: 900px;
     border-radius: 10px;
     display: none;
-    background-color: greenyellow;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px grey;
 }
 
 .type {
     height: 40px;
     width: 235px;
     position: relative;
-    top: 18px;
+    top: 12px;
     left: 5px;
     border-radius: 10px;
 }
@@ -170,20 +173,20 @@ body .btn-primary {
     background-color: #fafafa;
     color: red;
     position: relative;
-    top: 18px;
+    top: 12px;
     border-radius: 50%;
 }
 
-.team-title {
-    height: 70px;
-    display: block;
-    background-color: cadetblue;
-}
 
-    .team-title h1 {
-        position: relative;
-        top: 20%;
-    }
+.skill-title p {
+    height: 100px;
+    width: 1440px;
+    font-size: 15pt;
+    margin: 0px 20px;
+}
+.skill-title span{
+    font-size: 35pt;
+}
 
 
 @media only screen and (max-width: 1480px) {
@@ -213,31 +216,123 @@ body .btn-primary {
     }
 }
 
-.column{
 
-  float: left;
+.content{
+    height: 2400px;
+    width: 1480 px;
+    margin-top: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+.content1{
+   height: 400px;
+   width: 97%;
+   margin: 0px 0px 0px 25px;
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   display: flex;
+
+}
+.content2{
+    height: 400px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+
+}
+.content3{
+    height: 600px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+}
+.content4{
+    height: 600px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+}
+.content-title{
+  height: 100%;
   width: 20%;
-  padding: 20px;
-  transition: 1s;
-
+  background-color: #fff;
+  text-align: center;
+  border-right: 1px solid;
 }
-@media screen and (max-width:992px){
-    .column{
+.content-title i,h1{
+    position: relative;
+    top:100px;
+    color: red;
+}
+.content-title h1{
+    margin-top: 30px;
+}
+.content-des{
+    height: 100%;
+    width: 80%;
+}
+.subject{
+    height: 25%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+.des-title{
+    height: 100%;
+    width: 10%;
+    background-color:grey;
+    text-align: center;
+}
+.des-title h5{
+    position: relative;
+    top: 30px;
+}
+.des-des{
+    height: 100%;
+    width: 90%;
+    margin-left: 5px;
+}
 
-        float: left;
-        width: 50%;
+.subject1{
+    height: 33.33%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+.subject2{
+    height: 16.7%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+
+   /* Finish */
+
+   .finish {
+    height: 70px;
+    max-width: 1480px;
+    background-color: chocolate;
+}
+
+    .finish h6 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
     }
-    
-}
-@media screen and (max-width:992px){
-    .column{
 
-        float: left;
-        width: 100%;
+    .finish span {
+        color: crimson;
     }
-    
-}
-.column:hover{
-    background-color: rosybrown;
-    border: solid;
-}

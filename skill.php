@@ -36,7 +36,7 @@
                         <a href="service.php">Services</a>
                     </li>
                     <li>
-                        <a href="#">Skill</a>
+                        <a href="skill.php">Skill</a>
                     </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Education</a></li>
@@ -91,38 +91,219 @@
             <h1> Skill</h1>
         </div>
     </div>
-
-    <div class="row">
-
-         <div class="column">
-             <h2 style="color:blue;">Web design</h2>
-             <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.</p>
-         </div>
-
-         <div class="column">
-            <h2 style="color:blue;">  Web development </h2>
-            <p>Creating a dynamic web-site or web application is called web development.Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network).[1] Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer. Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.
+    <div class="skill-title">
+        <div class="search-box">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search" class="type">
+                <button type="submit" class="sub"><i class="fa fa-search"></i></button>
+            </form>
         </div>
-
-        <div class="column">
-            <h2 style="color:blue;">Game development</h2>
-            <p>Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release.Game Development can be undertaken by a large Game Development Studio or by a single individual. It can be as small or large as you like. As long as it lets the player interact with content and is able to manipulate the game’s elements, you can call it a ‘game’.</p>
+        <div class="skill-title">
+            <p><Span>F</Span>or gathering different type of skill, we have to learn and practice them. For gathering every skill, we have to learn different types of language.
+            In this website, we discuss how to accquire skills.
+            </p>
         </div>
-
-        <div class="column">
-            <h2 style="color:blue;">App development</h2>
-            <p>App Development refers to the creation of computer applications for use on mobile devices such as tablets, smartphones and smart watches. Mobile device features such as cameras, motion and location awareness can be used to create unique and inventive mobile-only applications for things such as taxi and bike sharing.The world is officially mobile and almost every major company with an internet presence also has an associated app that tailors and extends its services to the mobile user. At the time of this writing, Indeed.com listed over 500 open, full-time positions for mobile app developers in the U.S. with salary estimates ranging from $50K to $115K per year</p>
-        </div>
-
-        <div class="column">
-            <h2 style="color:blue;">Database analysis</h2>
-            <p>Data analysis is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making. The purpose of Data Analysis is to extract useful information from data and taking the decision based upon the data analysis.</p>
-        </div>
-
-         
-
-
     </div>
+
+    <div class="content">
+        <div class="content1">
+            <div class="content-title">
+                <i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
+                <h1>Website <br>Design</h1>    
+            </div>
+            <div class="content-des">
+                <div class="subject">
+                    <div class="des-title">
+                        <h5>HTML5</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft).Many new syntactic features are included. <a style="text-decoration: none;" href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="blank">Learn more </a> about html5 tags.
+                        </p>
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="des-title">
+                        <h5>CSS3</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics. <a style="text-decoration: none;" href="https://www.w3schools.com/css/default.asp" target="blank">Learn more</a> about css3 tags.</p>
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="des-title">
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+                            Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior, often incorporating third-party libraries. <a style="text-decoration: none;" href="https://www.javascript.com" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="des-title">
+                        <h5>jQuery</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript. <a style="text-decoration: none;" href="https://jquery.com" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="content2">
+            <div class="content-title">
+                <i class="fas fa-file-code fa-4x"></i>
+                <h1>Web <br>Development</h1>    
+            </div>
+            <div class="content-des">
+                <div class="subject1">
+                    <div class="des-title">
+                        <h5>PHP</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>PHP is a general-purpose scripting language geared towards web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world. PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common Gateway Interface (CGI) executable. On a web server, the result of the interpreted and executed PHP code – which may be any type of data, such as generated HTML or binary image data – would form the whole or part of an HTTP response. <a style="text-decoration: none;" href="https://www.php.net" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject1">
+                    <div class="des-title">
+                        <h5>Mysql</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>MySQL is an open-source relational database management system (RDBMS). Its name is a combination of "My", the name of co-founder Michael Widenius's daughter, and "SQL", the abbreviation for Structured Query Language. A relational database organizes data into one or more data tables in which data types may be related to each other; these relations help structure the data. SQL is a language programmers use to create, modify and extract data from the relational database, as well as control user access to the database. MySQL is a component of the LAMP web application software stack, which is an acronym for Linux, Apache, MySQL, Perl/PHP/Python. <a style="text-decoration: none;" href="https://www.mysql.com"target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject1">
+                    <div class="des-title">
+                        <h5>Node.js</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere" paradigm, unifying web-application development around a single programming language, rather than different languages for server-side and client-side scripts. <a style="text-decoration: none;" href="https://nodejs.org/en/" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="content3">
+            <div class="content-title">
+                <i class="fas fa-cogs fa-4x"></i>
+                <h1>Software <br>Development</h1>    
+            </div>
+            <div class="content-des">
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>Python</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Python is a high-level programming language used for general-purpose programming. With a simple syntax, Python has automatic memory management and dynamic features that make it suitable to be used in a variety of applications in the software development companies such as gaming, web applications, language development, prototyping, etc. The testers use it, as debugging is quite easy in this language. <a style="text-decoration: none;" href="https://www.python.org" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>Java</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Java is an object-oriented programming language that can be written on any device and can work even on a cross-platform basis. Often used to develop mobile applications, Java is also the basis of the Android operating system. The language is preferred by the testers owing to its ability to use even on cross-platforms. <a style="text-decoration: none;" href="https://www.java.com/en/" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>Ruby</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>With numerous tools and libraries available along with the language, Ruby is simple to use the programming language that does not require one to learn programming vocabulary or commands. Quite popular on small websites, Ruby does not deliver the expected performance on large websites. With a full-stack framework, testing any program that has been developed using Ruby is easy. <a style="text-decoration: none;" href="https://www.ruby-lang.org/en/" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>C</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>One of the most difficult programming languages for software development, gaining an understanding and knowledge of C makes it simple to learn other languages such as C++. Since it is a machine-level language, a tester who has its knowledge does not find it difficult to test a program written in any other language as well. <a style="text-decoration: none;" href="https://www.w3schools.in/c-tutorial/" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>Perl</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>One of the commonly used languages for software, hardware, and network testing, PERL helps in ensuring the best quality of a software product. Its file handling techniques and powerful file analyzing that consume the least execution time make it one of the most preferred languages over other programming languages. <a style="text-decoration: none;" href="https://www.perl.org" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>MATLAB</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>MATLAB is one of the most preferred languages over other programming languages for software testing. This language allows the testing team to execute test algorithms without any sort of recompilation. Its desktop environment allows one to work interactively with the data, which, in turn, helps one to keep an easy track of files and variables and hence, simplifies the debugging process. <a style="text-decoration: none;" href="https://www.mathworks.com/products/matlab.html" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+            </div>       
+        </div>
+        <div class="content4">
+            <div class="content-title">
+                <i class="fas fa-dice-d6 fa-4x"></i>
+                <h1>Game <br>Development</h1>    
+            </div>
+            <div class="content-des">
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>C++</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.  It is almost always implemented as a compiled language, and many vendors provide C++ compilers. <a style="text-decoration: none;" href="https://www.w3schools.com/CPP/default.asp" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>Java</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Java is an object-oriented programming language that can be written on any device and can work even on a cross-platform basis. Often used to develop mobile applications, Java is also the basis of the Android operating system. The language is preferred by the testers owing to its ability to use even on cross-platforms. <a style="text-decoration: none;" href="https://www.java.com/en/" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>HTML5</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft).Many new syntactic features are included. <a style="text-decoration: none;" href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="blank">Learn more </a> about html5 tags.
+                        </p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>CSS3</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics. <a style="text-decoration: none;" href="https://www.w3schools.com/css/default.asp" target="blank">Learn more</a> about css3 tags.</p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+                            Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior, often incorporating third-party libraries. <a style="text-decoration: none;" href="https://www.javascript.com" target="blank">Learn more</a></p>
+                    </div>
+                </div>
+                <div class="subject2">
+                    <div class="des-title">
+                        <h5>SQL</h5>
+                    </div>
+                    <div class="des-des">
+                        <p>SQL is a standard language for storing, manipulating and retrieving data in databases. SQL is found to be an interactive language that is on the rising path among other programming languages. Tech giants like Amazon, Google, IBM, Oracle, Helix, Microsoft, etc. continue to utilize SQL in their systems. This is considered to be a standardized program that is used to perform relational functions and operations. <a style="text-decoration: none;" href="https://www.w3schools.com/sql/" target="blank">Learn more</a></p>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finish">
+        <h6> Created By <span>Samshul Islam</span> | © 2021 All rights reserved.</h6>
+    </div>
+
+
+
 
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

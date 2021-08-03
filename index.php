@@ -87,8 +87,8 @@
             </div>
         </div>
     </nav>
+    </div>
     <div class="first-section">
-
         <div class="text1">
             <p class="text2">Hello, my name is</p><br />
             <p class="text3">Samshul Islam</p><br />
