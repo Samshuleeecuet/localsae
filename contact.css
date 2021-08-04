@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 
@@ -163,3 +163,55 @@ body .btn-primary {
     }
 }
 
+       /*  skill-title  */
+
+       .skill-title {
+        height: 80px;
+        width: 1480px;
+        position: relative;
+        z-index: 1;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .search-box {
+        display: flex;
+        height: 60px;
+        width: 280px;
+        position: absolute;
+        left: 900px;
+        border-radius: 10px;
+        display: none;
+        z-index: 2;
+        background-color: white;
+        box-shadow: 5px 5px 10px 2px grey;
+    }
+    
+    .type {
+        height: 40px;
+        width: 235px;
+        position: relative;
+        top: 12px;
+        left: 5px;
+        border-radius: 10px;
+    }
+    
+    .sub {
+        height: 30px;
+        width: 30px;
+        background-color: #fafafa;
+        color: red;
+        position: relative;
+        top: 12px;
+        border-radius: 50%;
+    }
+    
+    
+    .skill-title p {
+        height: 100px;
+        width: 1440px;
+        font-size: 15pt;
+        margin: 0px 20px;
+    }
+    .skill-title span{
+        font-size: 35pt;
+    }

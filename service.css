@@ -146,16 +146,19 @@ ul.our-primary-menu li a:hover {
     max-width: 1480px;
     background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .search-box {
     display: flex;
     height: 60px;
     width: 280px;
-    position: relative;
-    left: 800px;
+    position: absolute;
+    left: 900px;
     border-radius: 10px;
     display: none;
+    z-index: 2;
     background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
 }
 
@@ -183,13 +186,11 @@ ul.our-primary-menu li a:hover {
     color:white;
     background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%);
 }
-    .team-title h1 {
-        position: relative;
-        top: 20%;
-    }
-.team-title span{
-
+.team-title h1 {
+    position: relative;
+    top: 20%;
 }
+
 
 
 @media only screen and (max-width: 1480px) {

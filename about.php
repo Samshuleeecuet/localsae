@@ -1,6 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!doctype html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,18 +14,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="about.js" />
-
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <title>About</title>
+    <title></title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light main-header sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light main-header sticky-top">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
@@ -40,14 +36,14 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="team.php">Team</a></li>
                     <li>
-                        <a href="service.php">Services </a>
+                        <a href="service.php">Services</a>
                     </li>
                     <li>
                         <a href="skill.php">Skill</a>
                     </li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="education.php">Education</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
 
                 <div class="header-info d-flex align-items-center">
@@ -66,7 +62,7 @@
                     </div>
                     <div class="header-button">
                     <?php 
-                        session_start();
+                        
 
                             if(isset($_SESSION['id'])){
                                 ?>
@@ -87,29 +83,28 @@
             </div>
         </div>
     </nav>
-    <div class="team-title">
+    <div class="about-title">
         <div class="search-box">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search" class="type">
                 <button type="submit" class="sub"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <h2>About us</h2>
+        <div class="about-title">
+            <p><Span>F</Span>or gathering different type of skill, we have to learn and practice them. For gathering every skill, we have to learn different types of language.
+            In this website, we discuss how to accquire skills.
+            </p>
+        </div>
     </div>
-
-    <div class="about-us">
-        <p> SAE Developer Company is an all-in-one Developer Platform for large business. In this company, many members are working here. </p>
-    </div>
-
-    <div class="finish">
-        <h6> Created By <span>Samshul Islam</span> | © 2021 All rights reserved.</h6>
-    </div>
+     
+    
 
     <!-- Optional JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

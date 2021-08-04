@@ -46,8 +46,8 @@
                         <a href="skill.php">Skill</a>
                     </li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="education.php">Education</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
 
                 <div class="header-info d-flex align-items-center">

@@ -1,4 +1,7 @@
-﻿<!doctype html>
+<?php session_start(); ?>
+
+
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -14,6 +17,181 @@
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>SKILL</title>
+    <style>
+         /*  skill-title  */
+
+ .skill-title {
+    height: 80px;
+    width: 1480px;
+    position: relative;
+    z-index: 1;
+    font-family: 'Rubik', sans-serif;
+}
+
+.search-box {
+    display: flex;
+    height: 60px;
+    width: 280px;
+    position: absolute;
+    left: 900px;
+    border-radius: 10px;
+    display: none;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px grey;
+}
+
+.type {
+    height: 40px;
+    width: 235px;
+    position: relative;
+    top: 12px;
+    left: 5px;
+    border-radius: 10px;
+}
+
+.sub {
+    height: 30px;
+    width: 30px;
+    background-color: #fafafa;
+    color: red;
+    position: relative;
+    top: 12px;
+    border-radius: 50%;
+}
+
+
+.skill-title p {
+    height: 100px;
+    width: 1440px;
+    font-size: 15pt;
+    margin: 0px 20px;
+}
+.skill-title span{
+    font-size: 35pt;
+}
+
+        .content{
+    height: 2400px;
+    width: 1480 px;
+    margin-top: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+.content1{
+   height: 400px;
+   width: 97%;
+   margin: 0px 0px 0px 25px;
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   display: flex;
+
+}
+.content2{
+    height: 400px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+
+}
+.content3{
+    height: 600px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+}
+.content4{
+    height: 600px;
+   width: 97%;
+   margin: 15px 0px 0px 25px;
+   box-shadow: 5px 5px 10px rgb(24, 4, 4);
+   border-radius: 10px;
+   border-left: 7px solid rgb(83, 3, 3);
+   display: flex;
+}
+.content-title{
+  height: 100%;
+  width: 20%;
+  background-color: #fff;
+  text-align: center;
+  border-right: 1px solid;
+}
+.content-title i,h1{
+    position: relative;
+    top:100px;
+    color: red;
+}
+.content-title h1{
+    margin-top: 30px;
+}
+.content-des{
+    height: 100%;
+    width: 80%;
+}
+.subject{
+    height: 25%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+.des-title{
+    height: 100%;
+    width: 10%;
+    background-color:grey;
+    text-align: center;
+}
+.des-title h5{
+    position: relative;
+    top: 30px;
+}
+.des-des{
+    height: 100%;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.subject1{
+    height: 33.33%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+.subject2{
+    height: 16.7%;
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+}
+
+
+   /* Finish */
+
+   .finish {
+    height: 70px;
+    max-width: 1480px;
+    background-color: chocolate;
+}
+
+    .finish h6 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
+    }
+
+    .finish span {
+        color: crimson;
+    }      
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light main-header sticky-top">
@@ -38,9 +216,9 @@
                     <li>
                         <a href="skill.php">Skill</a>
                     </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="education.php">Education</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
 
                 <div class="header-info d-flex align-items-center">
@@ -59,7 +237,7 @@
                     </div>
                     <div class="header-button">
                     <?php 
-                        session_start();
+                        
 
                             if(isset($_SESSION['id'])){
                                 ?>
@@ -80,17 +258,6 @@
             </div>
         </div>
     </nav>
-    <div class="skill-title">
-        <div class="search-box">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search" class="type">
-                <button type="submit" class="sub"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <div class="skill-title">
-            <h1> Skill</h1>
-        </div>
-    </div>
     <div class="skill-title">
         <div class="search-box">
             <form action="/action_page.php">
