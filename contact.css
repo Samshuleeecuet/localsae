@@ -163,14 +163,16 @@ body .btn-primary {
     }
 }
 
-       /*  skill-title  */
+       /*  contact-title  */
 
-       .skill-title {
-        height: 80px;
+       .contact-title {
+        height: 160px;
         width: 1480px;
         position: relative;
         z-index: 1;
         font-family: 'Rubik', sans-serif;
+        text-align:center;
+        background-color:#e0e0e0;
     }
     
     .search-box {
@@ -206,12 +208,242 @@ body .btn-primary {
     }
     
     
-    .skill-title p {
+    .contact-title h1 {
         height: 100px;
         width: 1440px;
-        font-size: 15pt;
         margin: 0px 20px;
+        position:relative;
+        top:40px;
     }
-    .skill-title span{
-        font-size: 35pt;
+    .contact-title p{
+        color:#666565;
     }
+    .con-sec{
+        height: 800px;
+        width: 1480px;
+        background-color: #e0e0e0;
+        display:flex;
+    }
+    .con-us{
+        height:650px;
+        width:30%;
+        background-color: #2d1880;
+        border-radius: 15px;
+        position: relative;
+        left: 150px;
+    }
+    .con-head{
+        color:white;
+        height: 200px;
+        width:80%;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    .con-head p{
+        position: relative;
+        top: 20px;
+    }
+    .con-icon{
+        position: relative;
+        top: 50px;
+    }
+    .phn{
+        display: flex;
+        height: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+    .phn i{
+        color: tomato;
+        padding-top: 3px;
+    }
+    .phn a{
+        text-decoration: none;
+        font-size:12pt;
+        position: relative;
+        left: 20px;
+        color: white;
+    }
+
+    .mail{
+        display: flex;
+        height: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+        top:30px;
+    }
+    .mail i{
+        color: tomato;
+        padding-top: 3px;
+    }
+    .mail a{
+        text-decoration: none;
+        font-size:12pt;
+        position: relative;
+        left: 20px;
+        color: white;
+    }
+
+    .location{
+        display: flex;
+        height: 20px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+        top:60px;
+    }
+    .location i{
+        color: tomato;
+        padding-top: 3px;
+    }
+    .location p{
+        font-size:12pt;
+        position: relative;
+        left: 20px;
+        color: white;
+    }
+    .social{
+        height: 50px;
+        width: 80%;
+        position: relative;
+        left: 50px;
+        top: 200px;
+        
+    }
+    .social a{
+        margin: 10px;
+        padding: 10px 13px;
+    }
+    .social i{
+        color: white;
+    }
+    .social a:hover{
+        background-color: tomato;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+    #facebook{
+        padding: 10px 2px;
+    }
+
+
+
+    .con-form {
+        background-color: #ffffff;
+        height: 650px;
+        width: 40%;
+        border-radius: 15px;
+        position: relative;
+        left: 220px;
+    }
+    .row1{
+        display: flex;
+    }
+    .row2{
+        display: flex;
+        position:relative;
+        top: 50px;
+    }
+    .col1 p{
+        position: relative;
+        top: 35px;
+        font-size: 10pt;
+        font-family: 'Rubik', sans-serif;
+    }
+    .col2{
+        margin-left: 30px;
+    }
+    .col2 p{
+        position: relative;
+        top: 35px;
+        font-size: 10pt;
+        font-family: 'Rubik', sans-serif;
+    }
+    input[type='text']{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom-color:blue ;
+        position: relative;
+        top: 20px;
+    }
+    input[type="text"]:focus{
+        outline: none;
+    }
+    .row3{
+        position: relative;
+        top: 130px;
+        height:200px;
+        
+    }
+    .col3{
+        justify-content:space-between;
+        font-size: 15pt;
+        
+    }
+    input[type='radio']{
+        position: relative;
+        top: 5px;
+        height: 18px;
+        width: 18px;
+    }
+    .col4{
+        display: flex;
+    }
+    .row4{
+        padding-left: 10px;
+    }
+    .msg p{
+        font-size: 15pt;
+        font-family: 'Rubik', sans-serif;
+        position:relative;
+        top:50px;
+    }
+    .submit{
+        text-align:right;
+        position:relative;
+        top:35px;
+        right:50px;
+    }
+    textarea{
+        position: relative;
+        top: 10px;
+    }
+    button{
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10px;
+        background-color: #020257;
+        color: white;
+    }
+    button:focus{
+        outline: none;
+        border:none;
+    }
+
+
+    /* Finish */
+
+.finish {
+    height: 70px;
+    max-width: 1480px;
+    background-color: black;
+}
+
+    .finish h6 {
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        color: whitesmoke;
+        position: relative;
+        top: 30px;
+    }
+
+    .finish span {
+        color: crimson;
+    }
+
+
+

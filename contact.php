@@ -13,7 +13,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css?v=<?php echo time(); ?>">
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title></title>
@@ -83,18 +83,113 @@
             </div>
         </div>
     </nav>
-    <div class="skill-title">
+    <div class="contact-title">
         <div class="search-box">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search" class="type">
                 <button type="submit" class="sub"><i class="fa fa-search"></i></button>
             </form>
         </div>
-        <div class="skill-title">
-            <p><Span>F</Span>or gathering different type of skill, we have to learn and practice them. For gathering every skill, we have to learn different types of language.
-            In this website, we discuss how to accquire skills.
-            </p>
+        <div class="contact-title">
+            <h1>Contact Us</h1>
+            <p>Any question or remarks? Just write a message!</p>
         </div>
+    </div>
+    <section class="con-sec">
+            <div class="con-us">
+                <div class="con-head">
+                    <h3>Contact Information</h3>
+                    <p>Fill up the form and our Team will get back to <br>you within 24 hours.</p>
+                </div>
+                <div class="con-icon">
+                    <div class="phn">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="d-block" href="tel:+8801816244741">+8801816244741</a>
+                    </div>
+                    <div class="mail">
+                        <i class="fas fa-envelope-open"></i>
+                        <a class="d-block" href="mailto:samshuleeeweb@gmail.com">samshuleeeweb@gmail.com</a>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p class="d-block">CUET Chittagong Bangladesh </p>
+                    </div>
+                </div>
+            
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f" id="facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>                         
+                </div>
+            </div>
+
+            <div class="con-form">
+                <div class="d-flex justify-content-center">
+                    <form action="message.php" method="post" enctype="multipart/form-data" id="email-form">
+                        <div class="row1">
+                            <div class="col1">
+                                <p>First Name</p>
+                                <input type="text" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName'];  ?>" name="firstName" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="col2">
+                                <p>Last Name</p>
+                                <input type="text" value="<?php if(isset($_POST['lastName'])) echo $_POST['lastName'];  ?>" name="lastName" id="lastName"  placeholder="Last Name">
+                            </div>        
+                        </div>
+                        <div class="row2">
+                            <div class="col1">
+                                <p>Email</p>
+                                <input type="text" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>" name="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="col2">
+                                <p>Phone</p>
+                                <input type="text" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];  ?>" name="phone" id="phone"  placeholder="Phone Number">
+                            </div>        
+                        </div>
+                        <div class="row3">
+                            <h4>What the type of work do you need?</h4>
+                            <div class="col3">
+                                <div class="col4">
+                                    <div class="row4">
+                                        <input type="radio" id="webdesign" name="webdesign" value="webdesign"><label for="webdesign">&nbsp Web Design</label>
+                                    </div>
+                                    <div class="row4">
+                                        <input type="radio" id="webdevelopment" name="webdevelopment" value="webdevelopment"><label for="webdevelopment"> &nbsp Web Development</label>
+                                    </div>
+                                    <div class="row4">
+                                        <input type="radio" id="gamedevelopment" name="gamedevelopment" value="gamedevelopment"><label for="gamedevelopment"> &nbsp Game Development</label>
+                                    </div>
+                                </div>
+                                <div class="col4 col5">
+                                    <div class="row4">
+                                        <input type="radio" id="softwaredevelopment" name="softwaredevelopment" value="webdevelopment"><label for="softwaredevelopment"> &nbsp Software Development</label>
+                                    </div>
+                                    <div class="row4">
+                                        <input type="radio" id="dataanalysis" name="dataanalysis" value="webdesign"><label for="dataanalysis">&nbsp Data Analysis</label>
+                                    </div>
+                                    <div class="row4">
+                                        <input type="radio" id="other" name="other" value="other"><label for="other">&nbsp Other</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <p>Message</p>
+                            <label for="message"></label>
+                            <textarea class="form-control" name="message" id="message" rows="5" cols="62">
+                            </textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+    </section>
+    <div class="finish">
+        <h6> Created By <span>Samshul Islam</span> | © 2021 All rights reserved.</h6>
     </div>
      
     
