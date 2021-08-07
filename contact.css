@@ -81,6 +81,8 @@ body .btn-primary {
     border: none;
     background-color: #fafafa;
     border-radius: 50%;
+    border-style: none !important;
+    outline: none !important;
 }
 
 .off {
@@ -89,6 +91,9 @@ body .btn-primary {
     background-color: #fafafa;
     display: none;
     border-radius: 50%;
+    outline: none;
+    border-style: none !important;
+    outline: none !important;
 }
 
 .header-call {
@@ -362,7 +367,7 @@ body .btn-primary {
         font-size: 10pt;
         font-family: 'Rubik', sans-serif;
     }
-    input[type='text']{
+    .type1{
         border-left: none;
         border-right: none;
         border-top: none;
@@ -412,14 +417,14 @@ body .btn-primary {
         position: relative;
         top: 10px;
     }
-    button{
+    .subbtn{
         border: none;
         padding: 10px 30px;
         border-radius: 10px;
         background-color: #020257;
         color: white;
     }
-    button:focus{
+    .subbtn:focus{
         outline: none;
         border:none;
     }

@@ -126,25 +126,25 @@
 
             <div class="con-form">
                 <div class="d-flex justify-content-center">
-                    <form action="message.php" method="post" enctype="multipart/form-data" id="email-form">
+                    <form method="POST" name="contactform" action="contact-form-handler.php">
                         <div class="row1">
                             <div class="col1">
                                 <p>First Name</p>
-                                <input type="text" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName'];  ?>" name="firstName" id="firstName" placeholder="First Name">
+                                <input type="text" class="type1" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName'];  ?>" name="firstName" id="firstName" placeholder="First Name" Required>
                             </div>
                             <div class="col2">
                                 <p>Last Name</p>
-                                <input type="text" value="<?php if(isset($_POST['lastName'])) echo $_POST['lastName'];  ?>" name="lastName" id="lastName"  placeholder="Last Name">
+                                <input type="text" class="type1" value="<?php if(isset($_POST['lastName'])) echo $_POST['lastName'];  ?>" name="lastName" id="lastName"  placeholder="Last Name" Required>
                             </div>        
                         </div>
                         <div class="row2">
                             <div class="col1">
                                 <p>Email</p>
-                                <input type="text" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>" name="email" id="email" placeholder="Email">
+                                <input type="text" class="type1" value="<?php if(isset($_POST['email'])) echo $_POST['email'];  ?>" name="email" id="email" placeholder="Email" Required>
                             </div>
                             <div class="col2">
                                 <p>Phone</p>
-                                <input type="text" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];  ?>" name="phone" id="phone"  placeholder="Phone Number">
+                                <input type="text" class="type1" value="<?php if(isset($_POST['phone'])) echo $_POST['phone'];  ?>" name="phone" id="phone"  placeholder="Phone Number" Required>
                             </div>        
                         </div>
                         <div class="row3">
@@ -152,24 +152,24 @@
                             <div class="col3">
                                 <div class="col4">
                                     <div class="row4">
-                                        <input type="radio" id="webdesign" name="webdesign" value="webdesign"><label for="webdesign">&nbsp Web Design</label>
+                                        <input type="radio" id="webdesign" name="work" value="Web design"><label for="webdesign">&nbsp Web Design</label>
                                     </div>
                                     <div class="row4">
-                                        <input type="radio" id="webdevelopment" name="webdevelopment" value="webdevelopment"><label for="webdevelopment"> &nbsp Web Development</label>
+                                        <input type="radio" id="webdevelopment" name="work" value="Web Development"><label for="webdevelopment"> &nbsp Web Development</label>
                                     </div>
                                     <div class="row4">
-                                        <input type="radio" id="gamedevelopment" name="gamedevelopment" value="gamedevelopment"><label for="gamedevelopment"> &nbsp Game Development</label>
+                                        <input type="radio" id="gamedevelopment" name="work" value="Game Development"><label for="gamedevelopment"> &nbsp Game Development</label>
                                     </div>
                                 </div>
                                 <div class="col4 col5">
                                     <div class="row4">
-                                        <input type="radio" id="softwaredevelopment" name="softwaredevelopment" value="webdevelopment"><label for="softwaredevelopment"> &nbsp Software Development</label>
+                                        <input type="radio" id="softwaredevelopment" name="work" value="Software Development"><label for="softwaredevelopment"> &nbsp Software Development</label>
                                     </div>
                                     <div class="row4">
-                                        <input type="radio" id="dataanalysis" name="dataanalysis" value="webdesign"><label for="dataanalysis">&nbsp Data Analysis</label>
+                                        <input type="radio" id="dataanalysis" name="work" value="Data Analysis"><label for="dataanalysis">&nbsp Data Analysis</label>
                                     </div>
                                     <div class="row4">
-                                        <input type="radio" id="other" name="other" value="other"><label for="other">&nbsp Other</label>
+                                        <input type="radio" id="other" name="work" value="Other"><label for="other">&nbsp Other</label>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +181,7 @@
                             </textarea>
                         </div>
                         <div class="submit">
-                            <button type="submit">Send Message</button>
+                            <button class="subbtn" type="submit">Send Message</button>
                         </div>
 
                     </form>
@@ -195,6 +195,8 @@
     
 
     <!-- Optional JavaScript -->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="contact.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
