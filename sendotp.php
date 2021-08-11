@@ -23,7 +23,7 @@
         </div>
 
         <div class="col-12">
-            <input id="verify" type="submit" class="btnVerify btn btn-primary" value="Verify" onClick="verifyOTP();">		
+            <button id="verify" type="submit" class="btnVerify btn btn-primary" value="Verify" onClick="verifyOTP();"> verify </button>		
         </div>
     </form>
 

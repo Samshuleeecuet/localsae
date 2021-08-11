@@ -1,76 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Send OTP</title>
+</head>
+<body>
+
+<div class="sendotp cointainer" style="position:relative;top:200px;line-height:60px;left:100px;">
+
+    <div class="error"></div>
+    <div class="success"></div>
+    <form id="frm-mobile-verification" action="otpprocess.php" method="post" >
+        <div class="col-6">
+            <label>Enter Your Mobile Number to Sent OTP</label>		
+        </div>
+
+        <div class="col-6">
+            <input type="number" name="phone" id="phone" class="form-input form-control" placeholder="Enter Phone Number">		
+        </div>
+
+        <div class="col-12">
+            <button id="sendotp" name="sendotp" type="submit" class="btnsendotp btn btn-primary" value="Send OTP" onClick="sendOTP();">Send OTP</button>		
+        </div>
+    </form>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
 <?php
-session_start();
-/* Your authentication key */
-$authKey = "abgbsaxhbsadbasbhdjhsajhd";
 
-/* Multiple mobiles numbers separated by comma */
-$mobileNumber = $_POST["phone"];
+//Your authentication key
+$authKey = "YourAuthKey";
 
-/* Sender ID,While using route4 sender id should be 6 characters long. */
-$senderId = "ABCDEF";
+//Sender ID,While using route4 sender id should be 6 characters long.
+$senderId = "102234";
 
-/* Your message to send, Add URL encoding here. */
-$rndno=rand(1000, 9999);
-$message = urlencode("otp number.".$rndno);
+if(isset($_POST['sendotp']))
 
-/* Define route */
-$route = "route=4";
-/* Prepare you post parameters */
-$postData = array(
-    'authkey' => $authKey,
-    'mobiles' => $mobileNumber,
-    'message' => $message,
-    'sender' => $senderId,
-    'route' => $route
+{
+
+    $mobileNumber=$_POST['phone']; 
+
+    //Your message to send, Add URL encoding here.
+    $message = urlencode("Test message");
+
+    //Prepare you post parameters
+    $postData = array(
+        'authkey' => $authKey,
+        'mobiles' => $mobileNumber,
+        'message' => $message,
+        'sender' => $senderId,
+        'route' => $route
 );
 
-/* API URL*/
-$url="https://control.msg91.com/api/sendhttp.php";
-
-/* init the resource */
-$ch = curl_init();
-curl_setopt_array($ch, array(
-    CURLOPT_URL => $url,
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POST => true,
-    CURLOPT_POSTFIELDS => $postData
-    /*,CURLOPT_FOLLOWLOCATION => true */
-));
-
-
-/* Ignore SSL certificate verification */
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-
-
-/* get response */
-$output = curl_exec($ch);
-
-/* Print error if any */
-if(curl_errno($ch))
-{
-
-    echo 'error:' . curl_error($ch);
+//API URL
+$url="http://api.msg91.com/api/sendhttp.php";
 }
 
-curl_close($ch);
 
-if(isset($_POST['btn-save']))
-{
-	
-$_SESSION['fname']=$_POST['fname'];
-$_SESSION['lname']=$_POST['lname'];
-$_SESSION['email']=$_POST['email'];
-$_SESSION['phone']=$_POST['phone'];
-$_SESSION['address']=$_POST['address'];
-$_SESSION['city']=$_POST['city'];
-$_SESSION['zip']=$_POST['zip'];
-$_SESSION['upload']=$_POST['upload'];
-$_SESSION['chose']=$_POST['chose'];
-$_SESSION['text']=$_POST['text'];
-$_SESSION['check']=$_POST['check'];
-$_SESSION['otp']=$rndno;
-header( "Location: sendotp.php" );
 
-}
 ?>
