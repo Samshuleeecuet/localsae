@@ -32,35 +32,6 @@
 </body>
 </html>
 
-<?php
-
-//Your authentication key
-$authKey = "YourAuthKey";
-
-//Sender ID,While using route4 sender id should be 6 characters long.
-$senderId = "102234";
-
-if(isset($_POST['sendotp']))
-
-{
-
-    $mobileNumber=$_POST['phone']; 
-
-    //Your message to send, Add URL encoding here.
-    $message = urlencode("Test message");
-
-    //Prepare you post parameters
-    $postData = array(
-        'authkey' => $authKey,
-        'mobiles' => $mobileNumber,
-        'message' => $message,
-        'sender' => $senderId,
-        'route' => $route
-);
-
-//API URL
-$url="http://api.msg91.com/api/sendhttp.php";
-}
 
 
 
